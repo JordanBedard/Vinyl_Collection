@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #EEEEEE;
+}
+
+/* NavBar */
+.uppercontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navcontainer {
+    background-color: #222831;
+    color: #EEEEEE;
+    font-size: 2em;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    flex: 1;
+}
+
+.logo {
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 16px;
+}
+
+.search-box {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    padding: 6px;
+}
+
+.input-search {
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 3px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #00ADB5;
+    padding-right: 40px;
+    color: #EEEEEE;
+}
+
+.input-search::placeholder {
+    color: rgba(255, 255, 255, .5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.btn-search {
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color: #ffffff;
+    background-color: transparent;
+    pointer-events: painted;
+}
+
+.btn-search:focus~.input-search {
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus {
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+/* Header */
+.headercontainer {
+    display: flex;
+    flex: 1 1 auto;
+    width: 80%;
+}
+
+.responsive {
+    width: 100%;
+    max-height: 400px;
+}
+
+/* Menu */
+.menucontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 3 3 auto;
+}
+
+.menuitems {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    background-color: #222831;
+    color: #EEEEEE;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* SubMenu section */
+.submenucontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 10 10 auto;
+}
+
+.genre {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    background-color: #393E46;
+    color: #EEEEEE;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+/* Cards section */
+
+.cardscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    flex: 1 1 auto;
+}
+
+.cards {
+    width: 80%;
+    background-color: #e7e1e1d2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    gap: 75px;
+}
+
+.cardimage {
+    width: 200px;
+    height: 200px;
+    border-style: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    padding: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: #222831;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+/* Footer section */
+.footercontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerelements {
+    background-color: #222831;
+    color: #EEEEEE;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footertitle {
+    color: #414447;
+    padding: 6px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footericons {
+    display: flex;
+    flex-direction: row;
+    padding: 6px;
+    gap: 12px;
+}
+
+.footercopyright {
+    font-size: 14px;
+    padding: 6px;
+    color: #414447;
+    font-weight: 600;
+}
