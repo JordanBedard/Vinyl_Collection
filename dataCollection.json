@@ -24,7 +24,7 @@
             "albumName": "Close to the Edge",
             "year": "1972",
             "genre": "Progressive Rock",
-            "albumImg": "queenGreatestHits.png",
+            "albumImg": "yesClosetotheEdge.jpg",
             "imgAlt": "Close to the Edge"
         },
         {
@@ -42,7 +42,7 @@
             "albumName": "Greatest Hits",
             "year": "1981",
             "genre": "Classic Rock",
-            "albumImg": "yesClosetotheEdge.jpg",
+            "albumImg": "queenGreatestHits.png",
             "imgAlt": "Greatest Hits"
         }
     ]

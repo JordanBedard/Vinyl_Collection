@@ -33,6 +33,12 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.logo:hover {
+    filter: brightness(300%);
 }
 
 .search-box {
@@ -135,12 +141,42 @@ body {
     padding-bottom: 10px;
 }
 
+.btnCollection {
+    user-select: none;
+}
+
+.btnCollection:hover {
+    cursor: pointer;
+    filter: brightness(300%);
+    user-select: none;
+}
+
+.btnWishlist {
+    user-select: none;
+}
+
+.btnWishlist:hover {
+    cursor: pointer;
+    filter: brightness(300%);
+    user-select: none;
+}
+
+.btnVisualize {
+    user-select: none;
+}
+
+.btnVisualize:hover {
+    cursor: pointer;
+    filter: brightness(300%);
+    user-select: none;
+}
+
 /* SubMenu section */
 .submenucontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 10 10 auto;
+    flex-wrap: nowrap;
 }
 
 .genre {
@@ -149,18 +185,27 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 5px;
+    gap: 3px;
     background-color: #393E46;
     color: #EEEEEE;
     padding-top: 3px;
     padding-bottom: 3px;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 300;
+}
+
+.genre>p {
+    cursor: pointer;
+    user-select: none;
+}
+
+.genre>p:hover {
+    filter: brightness(300%);
 }
 
 /* Cards section */
 
-.cardscontainer {
+.cardsContainer>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,6 +213,7 @@ body {
     margin-bottom: 3px;
     flex: 1 1 auto;
 }
+
 
 .cards {
     width: 80%;
@@ -218,10 +264,11 @@ body {
 }
 
 .footertitle {
-    color: #414447;
+    color: #eeeeeec6;
     padding: 6px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 200;
+    user-select: none;
 }
 
 .footericons {
@@ -229,11 +276,38 @@ body {
     flex-direction: row;
     padding: 6px;
     gap: 12px;
+    text-decoration: none;
+    user-select: none;
 }
 
 .footercopyright {
     font-size: 14px;
     padding: 6px;
-    color: #414447;
-    font-weight: 600;
+    color: #eeeeeec6;
+    font-weight: 200;
+    user-select: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:active {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+.hidden {
+    visibility: hidden;
 }

@@ -1,0 +1,22 @@
+{
+    "wishlist": [
+        {
+            "id": "0",
+            "author": "ACDC",
+            "albumName": "Back in Black",
+            "year": "1980",
+            "genre": "Classic Rock",
+            "albumImg": "acdcBackinblack.png",
+            "imgAlt": "Back in Black"
+        },
+        {
+            "id": "1",
+            "author": "Michael Jackson",
+            "albumName": "Thriller",
+            "year": "1982",
+            "genre": "Pop",
+            "albumImg": "jacksonThriller.png",
+            "imgAlt": "Thriller"
+        }
+    ]
+}
