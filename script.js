@@ -69,7 +69,10 @@ function updateCards(data) {
     });
 }
 
-// Using Menu Items
+// Base case - Loading Collection
+fetchdataCollection();
+
+// Navigating Using Menu Items
 
 document.querySelector(".btnCollection").addEventListener("click", loadingContentCollection);
 
@@ -83,33 +86,54 @@ function loadingContentWhislist() {
     fetchdataWl();
 }
 
+document.querySelector(".btnVisualize").addEventListener("click", visualizePage);
+
 // Google chart
-/*
-src = "https://www.gstatic.com/charts/loader.js"
+google.charts.load('current', { packages: ['corechart'] });
 
 function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Genre', 'Number'],
+        ['Classic Rock', 55],
+        ['Progressive Rock', 49],
+        ['Heavy Rock', 44],
+        ['Alternative', 24],
+        ['Classical', 15],
+        ['Jazz', 15],
+        ['Funk', 15],
+        ['Pop', 15],
+        ['Latin', 15],
+        ['Hip Hop', 15],
+        ['Electronic', 15],
+    ]);
 
-var data = google.visualization.arrayToDataTable([
-  ['Genre', 'Number'],
-  ['Classic Rock', 55],
-  ['Progressive Rock', 49],
-  ['Heavy Rock', 44],
-  ['Alternative', 24],
-  ['Classical', 15],
-  ['Jazz', 15],
-  ['Funk', 15],
-  ['Pop', 15],
-  ['Latin', 15],
-  ['Hip Hop', 15],
-  ['Electronic', 15],
-]);
+    var color = "#EEEEEE"
 
-var options = {
-  title: 'World Wide Wine Production'
-};
+    var options = {
+        title: 'Vinyl Collection by Genre',
+        pieHole: 0.5,
+        backgroundColor: color,
+        fontName: 'Poppins'
+    };
 
-var chart = new google.visualization.PieChart(document.getElementById('myChart'));
-chart.draw(data, options);
+    var chart = new google.visualization.PieChart(document.getElementById('myChart'));
+    chart.draw(data, options);
 }
 
-*/
+// Visualize page 
+
+function visualizePage() {
+    const cardsCompleteLayout = document.querySelector(".cardsLayout");
+    cardsCompleteLayout.innerHTML = '';
+
+    // Create Div
+    const visualizeContainer = document.createElement("div");
+    visualizeContainer.classList.add("visualizeCard");
+    // Create Div for content
+    const visualizeChart = document.createElement("div");
+    visualizeChart.setAttribute("id", "myChart");
+    // Append
+    visualizeContainer.append(visualizeChart);
+    cardsCompleteLayout.append(visualizeContainer);
+    google.charts.setOnLoadCallback(drawChart);
+}
